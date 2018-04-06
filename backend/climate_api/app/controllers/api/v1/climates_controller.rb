@@ -6,9 +6,15 @@ module Api::V1
 		end
 
 		def create
-			@climates = Climate.create(climate_params)
+			@climate = Climate.create(climate_params)
 			render json: @climate
 		end
+
+		    def update
+      		@climate = Climate.find(params[:id])
+      		@climate.update_attributes(climate_params)
+      		render json: @idea
+    	end
 
 		private
 
