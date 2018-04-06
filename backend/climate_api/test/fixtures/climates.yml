@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  city: MyString
+  temp: 1
+  status: MyString
+
+two:
+  city: MyString
+  temp: 1
+  status: MyString
