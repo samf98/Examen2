@@ -37,12 +37,13 @@ class ClimatesContainer extends Component{
 	}
 
 	updateClimate = (climate) => {
-  const climateIndex = this.state.climates.findIndex(x => x.id === climate.id)
-  const climates = update(this.state.climates, {
-    [climateIndex]: { $set: climate }
-  })
-  this.setState({climates: climates})
-}
+		console.log(climate)
+  		const climateIndex = this.state.climates.findIndex(x => x.id === climate.id)
+  		const climates = update(this.state.climates, {
+    	[climateIndex]: { $set: climate }
+  	})
+  		this.setState({climates: climates})
+	}
 
 	render(){
 		return(

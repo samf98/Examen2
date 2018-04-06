@@ -22,7 +22,6 @@ class ClimateForm extends Component{
       {climate: climate}
       )
     .then(response => {
-      console.log(response)
       this.props.updateClimate(response.data)
     })
     .catch(error => console.log(error))
